@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Puzzle Game</title>
+    <link rel="stylesheet" href="./stylesheet.css" type="text/css">
+    <script src="./Sudukojs.js"></script>
+</head>
+<header>
+    <h1>Sudoku Puzzle Game</h1>
+    <div id="setup-game">
+        <div id="diff">
+            <h3>Choose difficulty: </h3>
+            <label for="diff-1">
+                <input type="radio" name="difficulty" id="diff-1" checked> Easy
+            </label>
+            <label for="diff-2">
+                <input type="radio" name="difficulty" id="diff-2"> Medium
+            </label>
+            <label for="diff-3">
+                <input type="radio" name="difficulty" id="diff-3""> Hard
+            </label>
+           
+        </div>
+        <div id="time">
+            <h3>Choose Time: </h3>
+            <label for="time-1">
+                <input type="radio" name="time" id="time-1" checked> 3 minutes
+            </label>
+            <label for="time-2">
+                <input type="radio" name="time" id="time-2"> 5 minutes
+            </label>
+            <label for="time-3">
+                <input type="radio" name="time" id="time-3"> 10 Minutes
+            </label>
+
+        </div>
+        <div id="theme">
+            <h3>Choose Theme: </h3>
+            <label for="theme-1">
+                <input type="radio" name="theme" id="theme-1" checked> Default
+            </label>
+            <label for="theme-2">
+                <input type="radio" name="theme" id="theme-2"> Dark
+            </label>
+
+        </div>
+    </div>
+    <button id="start-btn">
+        Create New Game 
+    </button>
+</header>
+<body>
+    <div id="stats">
+        <p id="timer"></p>
+        <p id="lives"></p>
+    </div>
+    <div id="game">
+        <div id="board">
+
+        </div>
+        <div id="number-container" class="hidden">
+            <p id="one">1</p>
+            <p id="two">2</p>
+            <p id="three">3</p>
+            <p id="four">4</p>
+            <p id="five">5</p>
+            <p id="six">6</p>
+            <p id="seven">7</p>
+            <p id="eight">8</p>
+            <p id="nine">9</p>
+        </div>
+
+    </div>
+    
+</body>
+<footer>
+    Inspired by RedFlyer Coding YouTube Channel
+</footer>
+</html>
